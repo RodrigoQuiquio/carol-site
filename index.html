@@ -1,0 +1,115 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	
+	<head>
+
+		<title>Amanda Berglund</title>
+		
+		<meta name="description" content="Amanda Berglund is a Stockholm based graphic designer and illustrator." />
+		<meta name="keywords" content="graphic design, grafisk design, illustration, illustrator, illustratör, sweden, sverige, stockholm, frilans" />
+		<meta name="author" content="Amanda Berglund" />
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		
+		<link rel="icon" href="img/ab.png" type="image/png"/>
+		<link rel="image_src" href="img/amandaberglund.png"/>
+		<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'/>
+						
+	</head>
+
+<body>
+
+<div id="container">
+	<div id="menu">
+	
+		<div id="logo">
+		<a href="http://amandaberglund.com"><img src="img/ab-logo.svg" alt="Logo" /></a>
+		</div>
+		
+		<ul id="projectlist">
+			<li><a href="">Amanda Berglund</a></li>
+			<li><a href="/about">About &amp; Contact</a></li>
+			<li><a href="/blog">Blog</a></li>
+		</ul>
+
+	</div>
+
+	<div id="column-1">
+		<div class="viewport">
+			<a href="/gront-rott-gult/">
+				<span class="dark-background">Grönt Rött Gult</span>
+				<img src="img/kokbok.png" class="gridimg" title="Grönt Rött Gult" alt="1"/>	
+			</a>
+		</div>
+		<div class="viewport">
+			<a href="/command-c/">
+				<span class="dark-background">⌘ + C</span>
+				<img src="img/command-c.png" class="gridimg" title="⌘ + C" alt="4"/>
+			</a>
+		</div>
+		<div class="viewport">
+			<a href="/multiverse/">
+				<span class="dark-background">Cover illustration Multiverse</span>
+				<img src="img/multiverse.png" class="gridimg" title="Cover illustration Multiverse" alt="7"/>
+			</a>
+		</div>
+	</div>
+	<div id="column-2">
+		<div class="viewport">
+			<a href="/fabrik/">
+				<span class="dark-background">Fabrik</span>
+				<img src="img/fabrik.png" class="gridimg" title="Fabrik" alt="2"/>
+			</a>
+		</div>
+		<div class="viewport">
+			<a href="/pizza-presto/">
+				<span class="dark-background">Pizza Presto</span>
+				<img src="img/pizzapresto.png" class="gridimg" title="Pizza Presto" alt="5"/>
+			</a>
+		</div>
+		<div class="viewport">
+			<a href="/fikafika/">
+				<span class="dark-background">Fika Fika Illustrations </span>
+				<img src="img/fikafika.png" class="gridimg" title="Fika Fika Illustrations" alt="8"/>
+			</a>
+		</div>
+	</div>
+	<div id="column-3">
+		<div class="viewport">
+			<a href="/jean-paul-gaultier/">
+				<span class="dark-background">Jean Paul Gaultier</span>
+				<img src="img/jpg.png" class="gridimg" title="Jean Paul Gaultier" alt="3"/>
+			</a>
+		</div>
+		<div class="viewport">
+			<a href="/figs-birds/">
+				<span class="dark-background">Figs&amp;Birds</span>
+				<img src="img/figsbirds.png" class="gridimg" title="Figs&amp;Birds" alt="6"/>
+			</a>
+		</div>
+		<div class="viewport">
+			<a href="/ikea/">
+				<span class="dark-background">IKEA Illustrations</span>
+				<img src="img/ikea.png" class="gridimg" title="IKEA Illustrations" alt="9"/>
+			</a>
+		</div>
+	</div>
+	
+</div>	
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('.viewport').mouseenter(function(e) {
+            $(this).children('a').children('img').animate({ height: '320', left: '0', top: '0', width: '320'}, 100);
+            $(this).children('a').children('span').fadeIn(200);
+        }).mouseleave(function(e) {
+            $(this).children('a').children('img').animate({ height: '320', left: '0', top: '0', width: '320'}, 100);
+            $(this).children('a').children('span').fadeOut(200);
+        });
+    });
+    </script>
+
+</body>
+</html>
